@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [BankingAppSuite]">
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="com.banking.utility.ExtentReporterNG"/>
+  </listeners>
+  <test name="BankingApp(failed)">
+    <classes>
+      <class name="com.banking.testcase.TC_AddCustomerTest_003">
+        <methods>
+          <include name="addNewCustomer"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.banking.testcase.TC_AddCustomerTest_003 -->
+    </classes>
+  </test> <!-- BankingApp(failed) -->
+</suite> <!-- Failed suite [BankingAppSuite] -->
