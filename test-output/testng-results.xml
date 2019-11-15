@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="BankingAppSuite" duration-ms="30789" started-at="2019-11-12T05:04:40Z" finished-at="2019-11-12T05:05:11Z">
+  <suite name="BankingAppSuite" duration-ms="123849" started-at="2019-11-15T02:42:14Z" finished-at="2019-11-15T02:44:18Z">
     <groups>
     </groups>
-    <test name="BankingApp" duration-ms="30789" started-at="2019-11-12T05:04:40Z" finished-at="2019-11-12T05:05:11Z">
+    <test name="BankingApp" duration-ms="123849" started-at="2019-11-15T02:42:14Z" finished-at="2019-11-15T02:44:18Z">
       <class name="com.banking.testcase.TC_LoginTest_001">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.banking.testcase.TC_LoginTest_001@26653222]" name="setUp" is-config="true" duration-ms="24118" started-at="2019-11-12T10:34:40Z" finished-at="2019-11-12T10:35:04Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.banking.testcase.TC_LoginTest_001@3532ec19]" name="setUp" is-config="true" duration-ms="104736" started-at="2019-11-15T08:12:14Z" finished-at="2019-11-15T08:13:59Z">
           <params>
             <param index="0">
               <value>
@@ -18,10 +18,14 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.banking.testcase.TC_LoginTest_001@26653222]" name="loginTest" duration-ms="6520" started-at="2019-11-12T10:35:04Z" finished-at="2019-11-12T10:35:11Z">
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.banking.testcase.TC_LoginTest_001@3532ec19]" name="loginTest" duration-ms="18429" started-at="2019-11-15T08:13:59Z" finished-at="2019-11-15T08:14:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.banking.testcase.TC_LoginTest_001@3532ec19]" name="tearDown" is-config="true" duration-ms="658" started-at="2019-11-15T08:14:17Z" finished-at="2019-11-15T08:14:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- com.banking.testcase.TC_LoginTest_001 -->
     </test> <!-- BankingApp -->
   </suite> <!-- BankingAppSuite -->

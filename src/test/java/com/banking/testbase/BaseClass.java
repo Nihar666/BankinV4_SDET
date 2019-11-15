@@ -5,6 +5,8 @@ import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -26,6 +28,8 @@ public class BaseClass {
 	public String password=readConfig.getPassword();
 	public static WebDriver driver;
 	
+	public static Logger logger;
+	
 	
 	@Parameters("browser")
 	@BeforeClass
@@ -45,12 +49,16 @@ public class BaseClass {
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		
 		driver.get(baseUrl);
+		
+		
+		logger = Logger.getLogger("BankingV4_SDET");
+		PropertyConfigurator.configure("log4j.properties");
 	}
 	
-	/*@AfterClass
+	@AfterClass
 	public void tearDown(){
 		driver.quit();
-	}*/
+	}
 	
 	public void captureScreen(WebDriver driver, String tname) throws IOException{
 		TakesScreenshot ts = (TakesScreenshot)driver;

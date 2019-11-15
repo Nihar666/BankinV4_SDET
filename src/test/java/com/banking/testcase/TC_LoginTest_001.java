@@ -15,10 +15,14 @@ public class TC_LoginTest_001 extends BaseClass {
 		
 		driver.get(baseUrl);
 		
+		logger.info("Url is open");
+		
 		LoginPage lp = new LoginPage(driver);
 		
 		lp.setUserName(username);
+		logger.info("Enter username::");
 		lp.setPassword(password);
+		logger.info("password inserteddd");
 		
 		lp.clickSubmit();
 		captureScreen(driver, "loginTest");
